@@ -34,6 +34,7 @@ by this way
     dont support border-radius and other properties
 
 scrollbar-color:lightgreen black;
+// auto,thin 
 scrollbar-width:thin;
 }
 }
