@@ -1,0 +1,40 @@
+only target body scrollbar //
+
+body::-webkit-scrollbar{
+
+}
+
+only target specific scrollbar.. select specific div //
+
+.vertical-scrollbar::-webkit-scrollbar {}
+
+width affects only vertical scrollbars  //
+height affects only horizontal scrollbars //
+
+::-webkit-scrollbar {
+width:2em;
+height:2em;
+}
+
+
+SUPPORT //----------------------------------
+
+ -webkit only supports on google and safari  
+ so for other browsers we can do that 
+by this way  
+ @support -- check browsers support something 
+ * => select everything with --webkit-scrollbar 
+ * =>its a regular property not pseudo element   
+
+
+@supports(scrollbar-color: red blue){
+* {
+    must give two colors one is for scrollbar-track 
+    and other is for scrollbar-thumb //
+    dont support border-radius and other properties
+
+scrollbar-color:lightgreen black;
+scrollbar-width:thin;
+}
+}
+
